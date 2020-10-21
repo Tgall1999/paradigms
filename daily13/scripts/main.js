@@ -81,7 +81,7 @@ function parseAndMakeNextNetworkCall(name, response_text){
 function nameNextNetworkCallAndParse(age){
   console.log("make Network Call 2 " + age + " " + age%10);
 
-  //Make netwrok call to the ZIP code API
+  //Make netwrok call to the ZIP code API with final digit of age as final digit of zip code
   var xhr = new XMLHttpRequest();
   var url = "https://api.zippopotam.us/us/3316" + age%10;
   xhr.open("GET",url,true);
